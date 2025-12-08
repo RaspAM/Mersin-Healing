@@ -1,10 +1,4 @@
 /* Адаптивность */
-@media (max-width: 480px) {
-  header {
-    background-position: top center; /* показываем верхнюю часть */
-    background-size: contain;        /* картинка целиком, но могут быть поля */
-  }
-}
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -24,6 +18,8 @@
 
 @media (max-width: 480px) {
   header {
+    background-position: top center; /* показываем верхнюю часть */
+    background-size: contain;        /* картинка целиком, но могут быть поля */
     padding: 20px 10px;
   }
   header h1 {
@@ -38,6 +34,7 @@
   }
 }
 
+/* Header */
 header {
   background: url("./images/header-bg.jpg") no-repeat center center/cover;
   min-height: 100vh; /* высота = экран */
@@ -45,11 +42,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; /* центрируем по вертикали */
-  align-items: center; /* центрируем по горизонтали */
+  align-items: center;     /* центрируем по горизонтали */
   text-align: center;
   color: #003366;
   padding: 20px;
 }
+
 header h1,
 header p {
   font-family: "Arial", sans-serif;
@@ -88,10 +86,6 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-ul {
-  list-style: none;   /* убираем стандартные точки */
-  padding-left: 0;    /* убираем отступ слева */
 }
 
 nav ul li {
@@ -134,6 +128,7 @@ section h2 {
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
 }
+
 .star {
   color: gold;       /* золотой цвет */
   font-size: 1.5em;  /* можно увеличить размер */
@@ -173,5 +168,4 @@ footer {
 #healing h2 {
   font-size: 1.4em;
 }
-
 
