@@ -74,7 +74,11 @@ nav ul li a:hover {
   color: #003366;
   box-shadow: 0 0 8px rgba(38, 255, 0, 0.7);
 }
-
+ul {
+  list-style: none;   /* убираем стандартные точки */
+  padding-left: 0;    /* убираем отступ слева */
+  margin-left: 0;     /* убираем лишний отступ */
+}
 /* Секции */
 section {
   padding: 40px 20px;
