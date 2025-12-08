@@ -138,6 +138,6 @@ footer {
   font-size: clamp(1.2em, 2.5vw, 1.4em);
 }
 .excursion-photo {
-  max-width: 600px;
+  max-width: 300px;
   height: auto;
 }
