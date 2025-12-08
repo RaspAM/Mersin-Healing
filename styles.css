@@ -113,7 +113,7 @@ footer {
 
 /* Общие стили для секций */
 #opus,
-#excursions,
+#indications,
 #healing,
 #hotels,
 #excursions,
@@ -128,7 +128,7 @@ footer {
 #opus h2 {
   font-size: clamp(1.4em, 3vw, 1.8em);
 }
-#history h2,
+#indications h2,
 #hotels h2,
 #excursions h2,
 #contacts h2 {
