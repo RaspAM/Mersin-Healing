@@ -141,3 +141,8 @@ footer {
   max-width: 300px;
   height: auto;
 }
+body {
+  max-width: 900px;   /* ограничение ширины */
+  margin: 0 auto;     /* центрирование */
+  padding: 20px;      /* внутренние отступы */
+}
