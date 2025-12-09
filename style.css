@@ -105,8 +105,8 @@ section h2 {
 
 /* Футер */
 footer {
-  background: #333;
-  color: #fff;
+  background: #87CEEB; /* небесно‑голубой */
+  color: #003366;      /* тёмный текст для контраста */
   text-align: center;
   padding: 20px;
 }
