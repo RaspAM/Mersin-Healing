@@ -22,8 +22,8 @@
   white-space: normal;
 }
 .page-content p {
-  font-size: clamp(1.2em, 2.2vw, 1.6em); /* увеличенный минимум и максимум */
-  line-height: 1.6;
+  font-size: clamp(1.1em, 1.8vw, 1.6em); /* увеличенный минимум и максимум */
+  line-height: 1.2;
 }
 /* ===== Навигация ===== */
 nav ul {
