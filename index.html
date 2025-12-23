@@ -21,7 +21,7 @@
      процессов и функций систем организма. Индивидуальная пошаговая программа 
      формируется с учётом природы ваших недугов и текущего состояния и направлена на активацию внутренних 
      сил для устойчивого прогресса восстановления.</p>  
-   <style>
+ <style>
 .accordion {
   width: 100%;
   background: #e6f2ff;
@@ -32,6 +32,7 @@
   font-weight: 600;
   cursor: pointer;
   text-align: center;
+  position: relative;
   transition: 0.25s;
 }
 
@@ -40,34 +41,69 @@
   border-color: #a8ccff;
 }
 
+/* Стрелка */
+.accordion::after {
+  content: "▼";
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.25s;
+}
+
+.accordion.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Плавная панель */
 .panel {
-  display: none;
-  padding: 20px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  padding: 0 10px;
   font-size: 18px;
   line-height: 1.6;
+}
+
+.panel.open {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 </style>
 
 <button class="accordion">
-  Показания для восстановления на минеральных и термальных водах
+  Что традиционно лечат на минеральных и термальных водах
 </button>
 
 <div class="panel">
-  <!-- Здесь будет твой список показаний -->
-  <p><strong>Заболевания суставов и позвоночника:</strong> артриты, артрозы, подагра, хронические воспалительные процессы, последствия травм.</p>
-  <p><strong>Нарушения обмена веществ:</strong> ожирение, метаболический синдром, нарушения углеводного и жирового обмена.</p>
-  <p><strong>Заболевания ЖКТ:</strong> гастриты, колиты, дискинезии, хронические запоры, перегруженный кишечник.</p>
-  <p><strong>Печень и желчевыводящие пути:</strong> холециститы, застой желчи, нарушения детокс‑функции.</p>
-  <p><strong>Периферическое кровообращение:</strong> нарушения микроциркуляции, холодные конечности, капиллярные спазмы.</p>
-  <p><strong>Нервная система:</strong> неврозы, вегетативные дисфункции, хроническая усталость, стрессовые перегрузки.</p>
-  <p><strong>Кожные заболевания:</strong> экзема, дерматиты, псориаз (вне обострения).</p>
+  <p><strong>Заболевания суставов и опорно‑двигательного аппарата:</strong> ревматоидные артриты, артрозы на ранних стадиях, подагра, последствия и реабелитация травм.</p>
+
+  <p><strong>Нарушения обмена веществ:</strong> лишний вес, висцеральное ожирение, нарушения углеводного и жирового обмена.</p>
+
+  <p><strong>Желудок, кишечник и поджелудочная железа:</strong> гастриты, колиты, СППК (синдром повышенной проницаемости кишечника), хронические запоры, функциональные нарушения поджелудочной железы.</p>
+
+  <p><strong>Печень и желчевыводящие пути:</strong> холециститы, застой желчи, плохая переносимость жирной пищи.</p>
+
+  <p><strong>Кожные заболевания:</strong> экзема, дерматиты, псориаз (вне обострения), кожные проявления, связанные с нарушением пищеварения и обмена веществ.</p>
+
+  <p><strong>Иммунная система:</strong> частые простуды, склонность к инфекциям, сниженная сопротивляемость, постоянная слабость и упадок сил.</p>
 </div>
 
 <script>
-document.querySelector(".accordion").addEventListener("click", function() {
+const acc = document.querySelector(".accordion");
+const panel = document.querySelector(".panel");
+
+acc.addEventListener("click", function() {
   this.classList.toggle("active");
-  const panel = this.nextElementSibling;
-  panel.style.display = panel.style.display === "block" ? "none" : "block";
+
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    panel.classList.remove("open");
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    panel.classList.add("open");
+  }
 });
 </script>
 <p>Программы объединяют бальнео процедуры, физиотерапию, дыхательные практики, фито  и ароматерапию. 
