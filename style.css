@@ -97,9 +97,9 @@ footer {
 
 /* ===== Общие стили для секций ===== */
 #opus,
-#indications,
 #healing,
 #hotels,
+#Therapy,
 #excursions,
 #contacts {
   font-size: clamp(1.1em, 2vw, 1.3em);
@@ -108,9 +108,8 @@ footer {
 
 #opus { line-height: 1.4; }
 #opus h2 { font-size: clamp(1.4em, 3vw, 1.8em); }
-
-#indications h2,
 #hotels h2,
+#Therapy, h2,
 #excursions h2,
 #contacts h2 {
   font-size: clamp(1.6em, 3.5vw, 1.9em);
