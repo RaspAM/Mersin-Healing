@@ -1,45 +1,73 @@
-/* ===== Герой-блок на главной: картинка + заголовок ===== */
+/* ===== Базовые стили ===== */
+body {
+  background-color: #F7F5F2;
+  color: #003366;
+  margin: 0;
+  font-family: inherit;
+}
+
+/* Убираем маркеры у всех списков */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Герой-блок ===== */
 .home-header {
   text-align: center;
   padding: 10px;
 }
 
-/* Картинка сверху */
 .home-header img.hero-image {
   display: block;
-  width: 100%;     /* растягивается на всю ширину */
-  height: auto;    /* сохраняет пропорции */
-  margin: 0;       /* убираем отступы */
-  border: none;    /* без рамок */
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
 }
 
-/* Заголовок под картинкой */
 .home-header h1 {
-  margin-top: 10px;
-  margin-bottom: 5px; /* уменьшили нижний отступ у заголовка */
+  margin: 10px 0 5px;
   color: #003366;
   text-shadow: 1px 1px 0 #e9ebcb;
   font-size: clamp(1.6em, 4vw, 2.5em);
-  white-space: normal;
-  }
+}
+
+/* ===== Контент ===== */
+.page-content {
+  max-width: clamp(600px, 80%, 900px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .page-content p {
-  font-size: clamp(1.2em, 2.2vw, 1.6em); /* увеличенный минимум и максимум */
+  font-size: clamp(1.2em, 2.2vw, 1.6em);
   line-height: 1.2;
   max-width: 900px;
-  margin: 10px auto 40px auto; /* верхний отступ 10px ISO 20px */
+  margin: 10px auto 40px;
   padding: 0 20px;
 }
+
+/* Фото в тексте */
+.excursion-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
 /* ===== Навигация ===== */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
-nav ul li { margin: 5px; }
+nav ul li {
+  margin: 5px;
+}
 
 nav ul li a {
   color: #0b021d;
@@ -48,23 +76,16 @@ nav ul li a {
   font-size: clamp(0.9em, 2vw, 1.6em);
   padding: 8px 16px;
   border-radius: 6px;
-  transition: all 0.3s ease;
-  display: inline-block;
   border: 1.5px solid rgb(32, 168, 236);
   background-color: #bcd9ff;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 nav ul li a:hover {
   background-color: #97b4ee;
   color: #003366;
   box-shadow: 0 0 8px rgba(38, 255, 0, 0.7);
-}
-
-/* убираем маркеры у любых списков */
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
 }
 
 /* ===== Секции ===== */
@@ -86,17 +107,21 @@ section h2 {
   padding-bottom: 10px;
 }
 
-.star { color: gold; font-size: 1.5em; }
+/* Индивидуальные секции */
+#opus { line-height: 1.4; }
+#opus h2 { font-size: clamp(1.4em, 3vw, 1.8em); }
 
-/* ===== Футер ===== */
-footer {
-  background: #87CEEB; /* небесно‑голубой */
-  color: #003366;      /* тёмный текст */
-  text-align: center;
-  padding: 20px;
+#hotels h2,
+#therapy h2,
+#excursions h2,
+#contacts h2 {
+  font-size: clamp(1.6em, 3.5vw, 1.9em);
 }
 
-/* ===== Общие стили для секций ===== */
+#healing h2 {
+  font-size: clamp(1.2em, 2.5vw, 1.4em);
+}
+
 #opus,
 #healing,
 #hotels,
@@ -107,43 +132,25 @@ footer {
   line-height: 1.6;
 }
 
-#opus { line-height: 1.4; }
-#opus h2 { font-size: clamp(1.4em, 3vw, 1.8em); }
-#hotels h2,
-#therapy h2,
-#excursions h2,
-#contacts h2 {
-  font-size: clamp(1.6em, 3.5vw, 1.9em);
-}
-
-#healing h2 { font-size: clamp(1.2em, 2.5vw, 1.4em); }
-
-/* ===== Узкая колонка по центру ===== */
+/* Узкая колонка */
 .header-inner {
-  width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
   text-align: left;
-  padding: 20px;
 }
 
-/* Фото в тексте */
-.excursion-photo {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-}
-
-/* Контентная ширина */
-.page-content {
-  max-width: clamp(600px, 80%, 900px);
-  margin: 0 auto;
-  padding: 20px;
-}
-body {
-  background-color: #F7F5F2; /* мягкий фон для всех устройств */
+/* ===== Футер ===== */
+footer {
+  background: #87CEEB;
   color: #003366;
+  text-align: center;
+  padding: 20px;
+}
+
+.star {
+  color: gold;
+  font-size: 1.5em;
 }
 
 /* ===== Адаптивность ===== */
@@ -152,26 +159,21 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+
   nav ul li a {
     font-size: 1em;
     padding: 10px 14px;
   }
 }
-@media (max-width: 480px) {
-  body {
-    background-color: #F7F5F2; /* мягкий */
-    color: #003366;            /* тёмно-синий текст */
-  }
 
+@media (max-width: 480px) {
   nav ul li a {
     font-size: 0.9em;
     padding: 8px 12px;
   }
 
   .page-content p {
-    font-size: 1.1em;          /* чуть крупнее для мобильных */
+    font-size: 1.1em;
     line-height: 1.4;
-    color: #003366;            /* фиксируем цвет текста */
   }
 }
-
