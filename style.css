@@ -141,6 +141,10 @@ footer {
   margin: 0 auto;
   padding: 20px;
 }
+body {
+  background-color: #F7F5F2; /* мягкий фон для всех устройств */
+  color: #003366;
+}
 
 /* ===== Адаптивность ===== */
 @media (max-width: 768px) {
@@ -155,7 +159,7 @@ footer {
 }
 @media (max-width: 480px) {
   body {
-    background-color: #ffffff; /* белый фон */
+    background-color: #F7F5F2; /* мягкий */
     color: #003366;            /* тёмно-синий текст */
   }
 
