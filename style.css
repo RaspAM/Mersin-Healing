@@ -204,9 +204,10 @@ footer {
 }
 .method-mini .short {
   display: block;
-  max-width: 300px; /* ограничение ширины строки */
-  white-space: normal; /* разрешаем переносы */
-  overflow: visible; /* ничего не скрываем */
+  max-width: 100%;
+  width: 100%;
+  white-space: normal;
+  overflow: visible;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
