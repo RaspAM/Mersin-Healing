@@ -199,6 +199,7 @@ footer {
   line-height: inherit;
   font-weight: inherit;
 }
+
 /* Общий стиль блока */
 .method-mini {
   font-size: 1.2em;      /* основной размер — крупный, ровный */
@@ -218,7 +219,7 @@ footer {
 
 /* Подзаголовки */
 .mini-title {
-  font-size: 1.2em;      /* ТОТ ЖЕ размер, что и текст */
+  font-size: 1.2em;      /* тот же размер, что и текст */
   font-weight: 600;
   margin: 18px 0 8px;
   color: #003366;
@@ -226,7 +227,7 @@ footer {
 
 /* Абзацы */
 .method-mini p {
-  font-size: 1.2em;      /* ТОТ ЖЕ размер, что и списки */
+  font-size: 1.2em;      /* тот же размер, что и списки */
   line-height: 1.6;
   margin: 12px 0;
 }
@@ -239,11 +240,12 @@ footer {
 }
 
 .method-mini ul li {
-  font-size: 1.2em;      /* ТОТ ЖЕ размер, что и абзацы */
+  font-size: 1.2em;      /* тот же размер, что и абзацы */
   line-height: 1.6;
   margin-bottom: 6px;
 }
-}
+
+/* Ограничение ширины коротких абзацев на больших экранах */
 @media (min-width: 600px) {
   .method-mini .short {
     max-width: 300px;
