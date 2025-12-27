@@ -202,6 +202,13 @@ footer {
   font-size: 18px;
   line-height: 1.2;
 }
+.method-mini .short {
+  display: inline-block;
+  max-width: 300px; /* ширина строки */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .panel.open {
   padding-top: 10px;
