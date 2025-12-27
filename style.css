@@ -201,41 +201,39 @@ footer {
 }
 /* Общий стиль блока */
 .method-mini {
-  font-size: 1.1em;
-  line-height: 1.5;
+  font-size: 1.2em;       /* крупнее, легко читать */
+  line-height: 1.6;       /* ровно, спокойно */
   color: #003366;
   max-width: 700px;
   margin: 0 auto;
-  padding: 10px 0;
 }
 
-/* Заголовок (имя Майера) */
 .method-mini strong {
   display: block;
-  font-size: 1.35em;      /* крупнее, но не кричаще */
+  font-size: 1.35em;      /* чуть крупнее, но не кричит */
   font-weight: 600;
   margin-bottom: 12px;
-  color: #003366;         /* тот же спокойный цвет */
 }
-/* Подзаголовки */
+
 .mini-title {
-  font-size: 1.15em;      /* чуть больше текста, но не огромный */
+  font-size: 1.2em;       /* такой же размер, как основной текст */
   font-weight: 600;
   margin: 18px 0 8px;
-  color: #003366;         /* убираем яркий голубой */
+  color: #003366;         /* убрали раздражающий голубой */
 }
-/* Абзацы */
+
 .method-mini p {
   margin: 12px 0;
 }
-/* Списки */
+
 .method-mini ul {
-  margin: 8px 0 18px;
+  margin: 10px 0 20px;
   padding-left: 20px;
   list-style: disc;
 }
+
 .method-mini ul li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 @media (min-width: 600px) {
   .method-mini .short {
