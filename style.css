@@ -13,8 +13,12 @@ ul {
   margin: 0;
 }
 .author {
-  font-weight: 500;
-  text-shadow: 0 0 2px rgba(0,0,0,0.25); /iso 4px 0.35
+  font-weight: 600;
+  color: #003366; /* спокойный тёмно-синий, хорошо читается */
+  text-decoration: none;
+}
+.author:hover {
+  text-decoration: underline;
 }
 /* ===== Герой-блок ===== */
 .home-header {
