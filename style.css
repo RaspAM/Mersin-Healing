@@ -208,6 +208,9 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 .panel.open {
