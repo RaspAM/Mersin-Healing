@@ -255,20 +255,55 @@ footer {
 /* =========================
    АДАПТИВНОСТЬ
 ========================= */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
+/* Базовый стиль навигации */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;        /* разрешаем перенос */
+  justify-content: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-@media (max-width: 480px) {
-  nav ul li a {
-    font-size: 1em;
-    padding: 10px 14px;
+nav ul li a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  flex: 1 1 auto;         /* кнопки сжимаются пропорционально */
+  white-space: nowrap;    /* не ломаем слова */
+}
+
+/* =========================
+   АДАПТИВНОСТЬ
+========================= */
+
+/* Средние экраны */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: row;   /* оставляем в строку */
+    flex-wrap: wrap;       /* перенос разрешён */
+    justify-content: center;
+    gap: 10px;
   }
 
-  .page-content p {
-    font-size: 1.1em;
-    line-height: 1.45;
+  nav ul li a {
+    font-size: 0.9em;      /* уменьшаем текст */
+    padding: 10px 14px;    /* уменьшаем кнопки */
+    flex: 1 1 45%;         /* две кнопки в строку */
+  }
+}
+/* Маленькие экраны */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 0.8em;
+    padding: 8px 10px;
+    flex: 1 1 100%;        /* одна кнопка в строку, но аккуратно */
   }
 }
