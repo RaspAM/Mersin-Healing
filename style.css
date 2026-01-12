@@ -7,12 +7,14 @@ html, body {
   font-family: "Segoe UI", "Inter", sans-serif;
 }
 
+/* Глобальные списки */
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 40px;
+  list-style: disc;
 }
 
+/* Автор */
 .author {
   font-weight: 600;
   color: #003366;
@@ -27,13 +29,11 @@ ul {
   text-align: center;
   padding: 10px;
 }
-
 .home-header img.hero-image {
   width: 100%;
   height: auto;
   display: block;
 }
-
 .home-header h1 {
   margin: 10px 0 5px;
   color: #003366;
@@ -50,9 +50,12 @@ ul {
   padding: 20px;
 }
 
-.page-content p {
+/* Единый размер текста для p и li */
+.page-content p,
+.page-content ul li {
   font-size: clamp(1.2em, 2.2vw, 1.6em);
   line-height: 1.5;
+  color: #003366;
   margin: 10px auto 24px;
   padding: 0 20px;
 }
@@ -73,6 +76,7 @@ nav ul {
   gap: 12px;
   padding: 0;
   margin: 10px 0;
+  list-style: none; /* меню без точек */
 }
 
 nav ul li a {
@@ -183,7 +187,7 @@ footer {
   padding: 10px 10px;
 }
 
-/* ===========   МЕТОДЫ (Майер / Залманов / Бутейко)========= */
+/* =========  МЕТОДЫ (Майер / Залманов / Бутейко)========= */
 .method-mini {
   font-size: 1.2em;
   line-height: 1.6;
