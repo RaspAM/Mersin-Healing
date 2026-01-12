@@ -50,28 +50,14 @@ ul {
   padding: 20px;
 }
 
-/* ЕДИНЫЙ РАЗМЕР ТЕКСТА ДЛЯ P, LI, H3 — ТОЛЬКО ВНУТРИ page-content */
+/* Единый размер текста для p и li */
 .page-content p,
-.page-content ul li,
-.page-content h3 {
+.page-content ul li {
   font-size: clamp(1.2em, 2.2vw, 1.6em);
   line-height: 1.5;
   color: #003366;
   margin: 10px auto 24px;
   padding: 0 20px;
-}
-
-/* H3 — выделенный */
-.page-content h3 {
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-/* LI — курсив */
-.page-content ul li {
-  font-style: italic;
-  margin-bottom: 10px;
 }
 
 /* Фото */
@@ -242,6 +228,14 @@ footer {
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 6px;
+}
+.page-content h3 {
+  font-size: clamp(1.2em, 2.2vw, 1.6em); /* как p */
+  font-weight: 700;                      /* выделение */
+  line-height: 1.5;                      /* как p */
+  color: #003366;
+  margin: 30px 0 10px;
+  padding: 0 20px;                       /* как p */
 }
 
 /* =========  АДАПТИВНОСТЬ ================ */
