@@ -173,6 +173,17 @@ footer {
 .accordion.active::after {
   transform: translateY(-50%) rotate(180deg);
 }
+.more-btn {
+  display: inline-block;
+  margin-top: 6px;
+  color: #1d3377dc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.more-btn:hover {
+  text-decoration: underline;
+}
 
 .panel {
   max-height: 0;
