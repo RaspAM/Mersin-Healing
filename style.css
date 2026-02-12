@@ -16,14 +16,14 @@ ul {
 /* Автор */
 .author {
   font-weight: 600;
-  color: #003366;
-  text-decoration: none;
-  text-shadow: 0 0 3px rgba(255,255,255,0.9); 
-  transition: text-shadow 0.2s ease, color 0.2s ease;
+  color: #003366;                 /* базовый цвет */
+  text-decoration: none;          /* убираем подчёркивание */
+  text-shadow: 0 0 3px #ffffff;   /* мягкий ореол вокруг текста */
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 .author:hover {
-  color: #003366; 
-  text-shadow: 0 0 3px rgba(30,144,255,0.9); 
+  color: #1e90ff;                 /* голубой при наведении */
+  text-shadow: 0 0 6px #1e90ff;   /* голубое свечение */
 }
 /* ====== ГЕРОЙ-БЛОК=========== */
 .home-header {
