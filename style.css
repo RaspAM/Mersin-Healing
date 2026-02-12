@@ -263,6 +263,8 @@ footer {
     font-weight: 700;
     margin: 20px 0 10px;
   }
+  .method-mini strong { font-size: 1.6em; font-weight: 700; }
+  .mini-title { font-size: 1.8em; font-weight: 700; }
 }
 
 /* --- Смартфоны --- */
