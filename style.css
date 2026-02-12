@@ -17,10 +17,10 @@ ul {
 .author {
   font-weight: 600;
   color: #003366;
-  background: rgba(255,255,255,0.7);
-  padding: 2px 4px;
-  border-radius: 4px;
-  text-decoration: none;
+   text-shadow: 0 0 3px #ffffff;       /* мягкий светлый ореол вокруг текста */
+}
+.author:hover {
+  text-shadow: 0 0 4px #ffffff;       /* чуть сильнее при наведении */
 }
 /* ====== ГЕРОЙ-БЛОК=========== */
 .home-header {
