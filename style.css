@@ -281,3 +281,30 @@ footer {
     flex: 1 1 100%;
   }
 }
+/* === Адаптивность текста === */
+@media (max-width: 768px) {
+  section, .page, p, li {
+    font-size: 1em;
+    line-height: 1.45;
+  }
+
+  section, .page {
+    padding: 14px;
+  }
+
+  strong {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  section, .page, p, li {
+    font-size: 0.95em;
+    line-height: 1.45;
+  }
+
+  section, .page {
+    padding: 12px;
+  }
+}
