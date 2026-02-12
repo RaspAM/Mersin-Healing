@@ -53,7 +53,7 @@ ul {
 /* Единый размер текста для p и li */
 .page-content p,
 .page-content ul li {
-  font-size: clamp(1.2em, 2.2vw, 1.6em);
+  font-size: clamp(1em, 1.8vw, 1.3em); /* уменьшено на ~20% */
   line-height: 1.5;
   color: #003366;
   margin: 10px auto 24px;
