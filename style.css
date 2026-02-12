@@ -263,61 +263,67 @@ footer {
   padding: 0 20px;                       /* как p */
 }
 
-/* =========  АДАПТИВНОСТЬ ТЕКСТА (усиленная) ================ */
+/* =========  АДАПТИВНОСТЬ ТЕКСТА (исправленная) ================ */
 @media (max-width: 768px) {
+
+  /* уменьшаем общий текст, но НЕ strong */
   section, .page, p, li {
     font-size: 0.9em;
     line-height: 1.5;
   }
 
-  section, .page {
-    padding: 10px 12px;     /* уменьшили ещё */
-    max-width: 100%;        /* растягиваем */
-  }
-
+  /* strong остаётся нормального размера */
   strong {
+    font-size: 1em;
+    font-weight: 600;
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+  }
+
+  section, .page {
+    padding: 10px 12px;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+
   section, .page, p, li {
-    font-size: 0.82em;      /* ещё меньше — это ключ */
+    font-size: 0.82em;
     line-height: 1.48;
   }
 
+  strong {
+    font-size: 0.95em;   /* чуть крупнее текста */
+    font-weight: 600;
+  }
+
   section, .page {
-    padding: 8px 10px;      /* минимальные отступы */
+    padding: 8px 10px;
     max-width: 100%;
   }
-
-  strong {
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
 }
 
-/* Глобально разрешаем переносы в strong */
-strong {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-/* Мобильная адаптация аккордеона */
+/* ======== Мобильная адаптация аккордеона (исправленная) ======== */
 @media (max-width: 600px) {
+
+  /* обычный текст в аккордеоне чуть меньше */
   .panel p,
-  .panel li,
+  .panel li {
+    font-size: 0.85em;
+    line-height: 1.45;
+  }
+
+  /* strong в аккордеоне снова выделяется */
   .panel strong {
-    font-size: 0.85em !important;
-    font-weight: normal !important;
+    font-size: 1em;
+    font-weight: 600;
     line-height: 1.45;
   }
 
   .panel {
-    padding: 8px 10px !important;
+    padding: 8px 10px;
   }
 }
 
