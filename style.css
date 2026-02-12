@@ -265,33 +265,16 @@ footer {
   padding: 0 20px;                       /* как p */
 }
 
-/* =========  АДАПТИВНОСТЬ МЕНЮ ================ */
-@media (max-width: 768px) {
-  nav ul li a {
-    font-size: 0.8em;
-    padding: 5px 14px;
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  nav ul li a {
-    font-size: 0.8em;
-    padding: 5px 8px;
-    flex: 1 1 100%;
-  }
-}
-
-/* =========  АДАПТИВНОСТЬ ТЕКСТА ================ */
+/* =========  АДАПТИВНОСТЬ ТЕКСТА (усиленная) ================ */
 @media (max-width: 768px) {
   section, .page, p, li {
-    font-size: 0.9em;        /* уменьшили */
-    line-height: 1.45;
+    font-size: 0.9em;
+    line-height: 1.5;
   }
 
   section, .page {
-    padding: 12px 14px;      /* уменьшили боковые отступы */
-    max-width: 100%;         /* растягиваем контейнер */
+    padding: 10px 12px;     /* уменьшили ещё */
+    max-width: 100%;        /* растягиваем */
   }
 
   strong {
@@ -303,13 +286,19 @@ footer {
 
 @media (max-width: 480px) {
   section, .page, p, li {
-    font-size: 0.85em;       /* ещё компактнее */
-    line-height: 1.45;
+    font-size: 0.82em;      /* ещё меньше — это ключ */
+    line-height: 1.48;
   }
 
   section, .page {
-    padding: 10px 12px;      /* ещё меньше отступы */
+    padding: 8px 10px;      /* минимальные отступы */
     max-width: 100%;
+  }
+
+  strong {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 }
 
@@ -319,3 +308,5 @@ strong {
   overflow-wrap: break-word;
   white-space: normal;
 }
+
+
