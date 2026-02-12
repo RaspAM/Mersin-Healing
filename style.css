@@ -16,10 +16,10 @@ ul {
 /* Автор */
 .author {
   font-weight: 600;
-  color: #002244;
+  color: #003366;
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-shadow: 0 0 3px rgba(255,255,255,0.8);
+  text-shadow: 0 0 4px rgba(0, 51, 102, 0.4);
 }
 /* ====== ГЕРОЙ-БЛОК=========== */
 .home-header {
