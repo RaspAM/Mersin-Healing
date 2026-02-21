@@ -43,7 +43,7 @@ text-shadow: 0 0 3px rgba(255,255,255,0.8);
   margin: 10px 0 5px;
   color: #003366;
   text-shadow: 1px 1px 0 #e9ebcb;
-  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  font-size: clamp(1.4rem, 2vw, 1.4rem);
 }
 
 /* ==== КОНТЕНТ==== */
@@ -104,8 +104,8 @@ nav ul li a:hover {
 
 /* ========== СЕКЦИИ =============== */
 section {
-  margin: 20px auto; /* new 5 ISO - 10 ISO 40 */
-  padding: 20px 10px; /* new 10  ISO 20 ISO 40 */
+  margin: 5px auto; /* new 5 ISO - 10 ISO 40 */
+  padding: 10px 10px; /* new 10  ISO 20 ISO 40 */
   background: #F7F5F2;
   border-left: 6px solid #006699;
   border-radius: 8px;
@@ -215,10 +215,7 @@ footer {
   color: #555;
   margin-top: 4px;
 }
-.page-content ul {
-  list-style: none;
-  padding-left: 0;
-}
+
 /* =========  АДАПТИВНОСТЬ ТЕКСТА (оптимизированная) ================ */
 /* --- Планшеты (768px и меньше) --- */
 @media (max-width: 768px) {
@@ -267,39 +264,6 @@ footer {
   section {
     padding: 10px 12px;
   }
-
-  .page-content,
-  .method-mini {
-    max-width: 94%;
-    margin: 0 auto;
-  }
-
-  .method-mini {
-    font-size: 0.85rem;
-  }
-
-  .mini-title {
-    font-size: 1.0rem;
-  }
-}
-
-/* --- Аккордеон (мягкая адаптация) --- */
-@media (max-width: 600px) {
-
-  .panel p,
-  .panel li {
-    font-size: 0.85rem;
-    line-height: 1.45;
-  }
-
-  .panel strong {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.45;
-  }
-
-  .panel {
-    padding: 8px 10px;
 
   .page-content,
   .method-mini {
