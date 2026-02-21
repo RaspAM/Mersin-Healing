@@ -337,3 +337,13 @@ footer {
     font-weight: 700;
   }
 }
+/* Убираем стандартные точки внутри контента */
+.page-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Возвращаем нормальный отступ для li */
+.page-content ul li {
+  padding-left: 20px;
+}
