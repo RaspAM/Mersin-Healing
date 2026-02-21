@@ -118,7 +118,7 @@ section h2 {
   padding-bottom: 10px;
   border-bottom: 2px solid #eee;
   color: #006699;
-  font-size: clamp(1.4em, 3vw, 1.9em);
+  font-size: clamp(1.4rem, 2vw, 1.4rem); /* 1.4em, 3vw, 1.9em */
 }
 
 /* ======= УЗКАЯ КОЛОНКА ====== */
