@@ -215,7 +215,10 @@ footer {
   color: #555;
   margin-top: 4px;
 }
-
+.page-content ul {
+  list-style: none;
+  padding-left: 0;
+}
 /* =========  АДАПТИВНОСТЬ ТЕКСТА (оптимизированная) ================ */
 /* --- Планшеты (768px и меньше) --- */
 @media (max-width: 768px) {
