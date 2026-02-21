@@ -99,13 +99,15 @@ nav ul li a {
   text-decoration: none;
   white-space: nowrap;
 }
-
 nav ul li a:hover {
   background: #97b4ee;
   color: #003366;
   box-shadow: 0 0 8px rgba(38, 255, 0, 0.7);
 }
-
+nav ul li a {
+  transform: scale(0.8);
+  transform-origin: center;
+}
 /* ===== СЕКЦИИ ===== */
 
 section {
@@ -119,7 +121,7 @@ section {
 }
 section h2 {
   margin-top: 0;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #eee;
   color: #006699;
