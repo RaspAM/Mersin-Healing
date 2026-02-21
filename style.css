@@ -104,8 +104,8 @@ nav ul li a:hover {
 
 /* ========== СЕКЦИИ =============== */
 section {
-  margin: 5px auto; /* new 5 ISO - 10 ISO 40 */
-  padding: 10px 10px; /* new 10  ISO 20 ISO 40 */
+  margin: 20px auto; /* new 5 ISO - 10 ISO 40 */
+  padding: 20px 10px; /* new 10  ISO 20 ISO 40 */
   background: #F7F5F2;
   border-left: 6px solid #006699;
   border-radius: 8px;
