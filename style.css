@@ -249,19 +249,19 @@ footer {
   margin-top: 4px;
 }
 
-/* =========  АДАПТИВНОСТЬ ТЕКСТА (оптимизированная) ================ */
 /* --- Планшеты (768px и меньше) --- */
 @media (max-width: 768px) {
+
   section p,
   section li,
   .page-content p,
   .page-content li {
-    font-size: 0.9rem;
-    line-height: 1.45;
+    font-size: 0.9rem;   /* было 1rem → уменьшили на 10% */
+    line-height: 1.5;
   }
 
   section {
-    padding: 14px 0;
+    padding: 14px 14px;
   }
 
   .page-content,
@@ -272,7 +272,7 @@ footer {
 
   .method-mini {
     font-size: 0.9rem;
-    line-height: 1.45;
+    line-height: 1.55;
   }
 
   .mini-title {
@@ -284,16 +284,17 @@ footer {
 
 /* --- Смартфоны (480px и меньше) --- */
 @media (max-width: 480px) {
+
   section p,
   section li,
   .page-content p,
   .page-content li {
-    font-size: 0.85rem;
-    line-height: 1.4;
+    font-size: 0.8rem;   /* уменьшили на 20% */
+    line-height: 1.45;
   }
 
   section {
-    padding: 10px 0;
+    padding: 10px 12px;
   }
 
   .page-content,
@@ -337,6 +338,12 @@ footer {
     font-size: 1.6em;
     font-weight: 700;
   }
+
+  .mini-title {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+}
 
   .mini-title {
     font-size: 1.8em;
