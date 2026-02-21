@@ -261,7 +261,7 @@ footer {
   }
 
   section {
-    padding: 14px 14px;
+    padding: 14px 0;
   }
 
   .page-content,
@@ -293,7 +293,7 @@ footer {
   }
 
   section {
-    padding: 10px 12px;
+    padding: 10px 0;
   }
 
   .page-content,
