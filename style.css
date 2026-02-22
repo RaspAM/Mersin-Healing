@@ -104,12 +104,14 @@ nav ul li a:hover {
   color: #003366;
   box-shadow: 0 0 8px rgba(38, 255, 0, 0.7);
 }
+nav ul {
+  gap: 10px; /* было 12px → минус 20% */
+}
 nav ul li a {
   transform: scale(0.8);
   transform-origin: center;
 }
 /* ===== СЕКЦИИ ===== */
-
 section {
   margin: 5px auto;
   padding: 5px 5px;
